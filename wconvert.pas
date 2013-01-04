@@ -79,11 +79,7 @@ begin
     writeln('            ', columna);
     writeln('        ],');
     writeln('        "orientacion": "',s_orientacion,'",');
-    if mochila = -1 then begin
-        writeln('        "mochila": "inf"');
-    end else begin
-        writeln('        "mochila": ',mochila);
-    end;
+    writeln('        "mochila": ',mochila);
     writeln('    },');
     writeln('    "casillas": [');
     //las casillas
@@ -129,11 +125,7 @@ begin
                 end else begin
                     writeln('        {');
                 end;
-                if mundo[i,j].zumbadores = -1 then begin
-                    writeln('            "zumbadores": "inf",');
-                end else begin
-                    writeln('            "zumbadores": ',mundo[i,j].zumbadores,',');
-                end;
+                writeln('            "zumbadores": ',mundo[i,j].zumbadores,',');
                 s_paredes:='';
                 c:=0;
                 k:=8;
