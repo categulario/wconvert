@@ -9,4 +9,4 @@ Modo de uso:
 
 Imprime el resultado a la consola, use redirección para guardar a un archivo
 
-`./wconvert mundo.MDO > mundo.json`
+`./wconvert mundo.MDO > mundo.world`
